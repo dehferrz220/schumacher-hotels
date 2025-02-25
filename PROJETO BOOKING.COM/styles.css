@@ -1,0 +1,143 @@
+/* Definindo as variáveis para facilitar a personalização */
+:root {
+    --primary-color: #4CAF50; /* Verde Luxuoso */
+    --secondary-color: #333; /* Cor para textos */
+    --accent-color: #FFD700; /* Ouro - para detalhes e botões */
+    --font-family: 'Arial', sans-serif;
+    --header-font-size: 2rem;
+    --section-padding: 50px;
+    --button-radius: 5px;
+    --btn-padding: 15px 30px;
+}
+
+/* Reset básico de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* Seção Hero */
+.hero {
+    text-align: center;
+    background-image: url('hotel-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn-book {
+    background-color: var(--accent-color);
+    color: white;
+    padding: var(--btn-padding);
+    border: none;
+    border-radius: var(--button-radius);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn-book:hover {
+    background-color: #e0a800;
+}
+
+/* Seção de Quartos */
+#rooms {
+    padding: var(--section-padding);
+    background-color: #f4f4f4;
+}
+
+.room-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.room {
+    width: 45%;
+    text-align: center;
+}
+
+.room img {
+    width: 100%;
+    border-radius: var(--button-radius);
+}
+
+.room h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+/* Seção de Serviços */
+#services {
+    padding: var(--section-padding);
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service {
+    width: 45%;
+    text-align: center;
+}
+
+.service h3 {
+    margin-top: 20px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+}
